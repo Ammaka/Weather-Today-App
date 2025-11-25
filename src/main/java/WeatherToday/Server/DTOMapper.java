@@ -1,10 +1,12 @@
 package WeatherToday.Server;
 
 import WeatherToday.WeatherReport.WholeReport;
-//maps the wholeReport to a Dto object
+//tells it how to map the DTO object
 
 public class DTOMapper {
 
+    //this is a factory method named from
+    // it takes a whole report object and returns a WeatherTodayDTO object
     public static WeatherTodayDTO from(WholeReport wholeReport) {
 
         // Weather array always has at least 1 element
@@ -18,9 +20,12 @@ public class DTOMapper {
                 wholeReport.getCoord().getLat(),       // latitude
                 wholeReport.getMain().getTemp(),       // temperature
                 wholeReport.getMain().getFeels_like(), // feels like
-                wholeReport.getMain().getHumidity(),   // humidity
+                wholeReport.getMain().getHumidity(),// humidity
+                wholeReport.getSys().getSunrise(),
+                wholeReport.getSys().getSunset(),
                 weatherMain,                           // weather main
-                weatherDescription                      // weather description
+                weatherDescription// weather description
+
         );
     }
 }

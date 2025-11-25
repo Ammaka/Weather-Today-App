@@ -8,7 +8,7 @@ public class Weather {
     private String description;
 
     public String getDescription() {
-        return description;
+        return "Description: "+description;
     }
 
     public void setDescription(String description) {
@@ -16,7 +16,7 @@ public class Weather {
     }
 
     public String getMain() {
-        return main;
+        return "Current condition: "+main;
     }
 
     public void setMain(String main) {

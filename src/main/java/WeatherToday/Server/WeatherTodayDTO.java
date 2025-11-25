@@ -1,6 +1,7 @@
 package WeatherToday.Server;
-//sample of the object that would be returned in flutter
+//sample of the object that the backend would return in flutter.. or that would be exposed over http
 public class WeatherTodayDTO {
+
     private String city;
     private String country;
     private double lon;
@@ -8,6 +9,8 @@ public class WeatherTodayDTO {
     private double temperature;
     private double feelsLike;
     private double humidity;
+    private String sunset;
+    private  String sunrise;
     private String main;
     private String description;
 
@@ -20,8 +23,11 @@ public class WeatherTodayDTO {
                            double temperature,
                            double feelsLike,
                            double Humidity,
+                           String sunrise,
+                           String  sunset,
                            String main,
-                           String description){
+                           String description
+                          ){
         this.city=city;
         this.country=country;
         this.lon=lon;
@@ -29,8 +35,11 @@ public class WeatherTodayDTO {
         this.temperature=temperature;
         this.feelsLike=feelsLike;
         this.humidity =Humidity;
+        this.sunrise=sunrise;
+        this.sunset = sunset;
         this.main=main;
         this.description=description;
+
     }
 
     public String getCity() {
@@ -103,5 +112,21 @@ public class WeatherTodayDTO {
 
     public void setFeelsLike(double feelsLike) {
         this.feelsLike = feelsLike;
+    }
+
+    public String getSunset() {
+        return sunset;
+    }
+
+    public void setSunset(String sunset) {
+        this.sunset = sunset;
+    }
+
+    public String getSunrise() {
+        return sunrise;
+    }
+
+    public void setSunrise(String sunrise) {
+        this.sunrise = sunrise;
     }
 }
