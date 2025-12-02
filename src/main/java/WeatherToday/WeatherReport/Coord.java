@@ -23,7 +23,7 @@ public class Coord {
         this.lon = lon;
     }
 
-    public String to_String(){
+    public String toString(){
         return "Cordinates: (Lon:"+lon+ "  Lat: "+lat+")";
     }
 }

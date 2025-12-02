@@ -23,7 +23,7 @@ public class Weather {
         this.main = main;
     }
 
-  public String to_String(){
+  public String toString(){
         return "Current Condition: "+main+", Description: "+description;
   }
 }

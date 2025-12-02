@@ -31,7 +31,7 @@ public class Main {
         this.temp = temp;
     }
 
-    public String to_String(){
+    public String toString(){
         return "Temperature status: (Temp:"+temp+ "  But feels like: "+ feels_like +")";
     }
 

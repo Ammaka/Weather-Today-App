@@ -14,7 +14,7 @@ public class WeatherTodayDTO {
     private String main;
     private String description;
 
-    public WeatherTodayDTO(){}  // this empty constructor is needed by jackson
+    public WeatherTodayDTO(){}
 
     public WeatherTodayDTO(String city,
                            String country,

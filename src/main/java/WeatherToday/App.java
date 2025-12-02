@@ -54,8 +54,8 @@ public class App {
 
             System.out.println(finReport.getName());
             System.out.println(finReport.getSys().getCountry());
-            System.out.println(finReport.getCoord().to_String());
-            System.out.println(finReport.getMain().to_String());
+            System.out.println(finReport.getCoord().toString());
+            System.out.println(finReport.getMain().toString());
             System.out.println(finReport.getMain().printHumidity());
             System.out.println(finReport.getWeather().getFirst().getMain());
             System.out.println(finReport.getWeather().getLast().getDescription());
